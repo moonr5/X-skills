@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/uaskills/execution-plan.schema.json",
+  "title": "Skill execution plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task",
+    "task_interpretation",
+    "selected_skills",
+    "compatibility_warnings",
+    "required_tools",
+    "dependencies",
+    "execution_sequence",
+    "verification_steps",
+    "limitations",
+    "execution_performed"
+  ],
+  "properties": {
+    "task": { "type": "string" },
+    "task_interpretation": { "type": "object" },
+    "selected_skills": { "type": "array" },
+    "considered_but_rejected": { "type": "array" },
+    "compatibility_warnings": { "type": "array", "items": { "type": "string" } },
+    "required_tools": { "type": "array", "items": { "type": "string" } },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "execution_sequence": { "type": "array" },
+    "verification_steps": { "type": "array", "items": { "type": "string" } },
+    "limitations": { "type": "array", "items": { "type": "string" } },
+    "execution_performed": { "type": "boolean", "const": false }
+  }
+}

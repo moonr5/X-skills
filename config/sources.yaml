@@ -1,0 +1,33 @@
+# Source registry. Add entries here without changing the importer.
+# enabled: false keeps a source documented but out of default discovery.
+# Discovery records candidates. It does not download skill files until import.
+
+sources:
+  - id: github-topic-agent-skills
+    type: github_search
+    query: "topic:agent-skills"
+    enabled: true
+  - id: github-topic-skills-md
+    type: github_search
+    query: "SKILL.md in:readme"
+    enabled: true
+  - id: anthropics-skills
+    type: github_repo
+    repo: anthropics/skills
+    enabled: true
+  - id: agentskills-spec
+    type: github_repo
+    repo: agentskills/agentskills
+    enabled: true
+  - id: google-skills
+    type: github_repo
+    repo: google/skills
+    enabled: false
+  - id: terminalskills
+    type: github_repo
+    repo: terminalskills/skills
+    enabled: true
+  - id: voltagent-awesome-agent-skills
+    type: github_repo
+    repo: VoltAgent/awesome-agent-skills
+    enabled: false

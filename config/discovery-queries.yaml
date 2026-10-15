@@ -1,0 +1,19 @@
+# Extra GitHub repository searches. Add queries here without changing code.
+# `python tools/collect_skills.py` runs only --query-budget of these per invocation.
+# Code search such as filename:SKILL.md needs authentication and is not assumed to work.
+
+queries:
+  - query: "topic:agent-skills"
+  - query: "SKILL.md in:readme"
+  - query: "agent skills in:description"
+  - query: "claude skills in:description"
+  - query: "codex skills in:description"
+  - query: "cursor skills in:description"
+  - query: "gemini cli skills in:description"
+  - query: "copilot skills in:description"
+  - query: "frontend agent skills in:description"
+  - query: "backend agent skills in:description"
+  - query: "cybersecurity skills in:description"
+  - query: "devops skills in:description"
+  - query: "data analysis skills in:description"
+    enabled: true

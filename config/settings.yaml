@@ -1,0 +1,41 @@
+# Runtime settings for the local catalog.
+# Do not put tokens in this file. Set GITHUB_TOKEN or GH_TOKEN in the environment.
+
+github:
+  api_base: https://api.github.com
+  raw_base: https://raw.githubusercontent.com
+  token_env:
+    - GITHUB_TOKEN
+    - GH_TOKEN
+  user_agent: universal-ai-skills/0.1 (local skill catalog)
+
+limits:
+  # Conservative defaults. Raise them deliberately for larger imports.
+  max_repos_per_run: 10
+  max_skills_per_repo: 100
+  max_files_per_skill: 40
+  max_file_bytes: 400000
+  max_repo_download_bytes: 20000000
+  max_tree_entries: 50000
+  max_archive_bytes: 30000000
+  max_archive_files: 2000
+  max_archive_uncompressed_bytes: 50000000
+  max_compression_ratio: 80
+  # Catalog writes stay single-threaded. Values above 1 parallelize file
+  # downloads only, and requests are still spaced by min_interval_seconds.
+  concurrency: 1
+  min_interval_seconds: 1.0
+  raw_min_interval_seconds: 0.35
+  max_retries: 3
+  discover_per_page: 20
+  search_default_limit: 20
+  search_max_limit: 100
+  index_batch_size: 200
+  body_index_max_bytes: 200000
+  excerpt_chars: 500
+  max_walk_depth: 12
+  request_timeout_seconds: 30
+
+semantic:
+  enabled: false
+  provider: none

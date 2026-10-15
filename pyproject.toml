@@ -1,0 +1,28 @@
+[project]
+name = "universal-ai-skills"
+version = "0.1.0"
+description = "Local-first catalog for discovering, importing, indexing, and planning with reusable AI agent skills."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Universal AI Skills Library contributors" }]
+dependencies = [
+  "PyYAML>=6.0.2",
+  "jsonschema>=4.23.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+uaskills = "uaskills.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["uaskills*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "integration: tests that call the live network; skipped unless UASKILLS_INTEGRATION=1",
+]
+addopts = "-q"

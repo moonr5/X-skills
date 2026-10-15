@@ -1,0 +1,21 @@
+{
+  "note": "Initial discovery sources from the requested seed lists. A repository is not a skill. Inspect each one before importing.",
+  "repositories": [
+    {"url": "https://github.com/anthropics/skills", "lists": ["initial-8", "additional-12"]},
+    {"url": "https://github.com/vercel-labs/agent-skills", "lists": ["initial-8"]},
+    {"url": "https://github.com/VoltAgent/awesome-agent-skills", "lists": ["initial-8", "additional-12"]},
+    {"url": "https://github.com/seb1n/awesome-ai-agent-skills", "lists": ["initial-8", "additional-12"]},
+    {"url": "https://github.com/junminhong/awesome-agent-skills", "lists": ["initial-8", "additional-12"]},
+    {"url": "https://github.com/praxstack/awesome-claude-skills", "lists": ["initial-8"]},
+    {"url": "https://github.com/open-agent-craft/awesome-agent-skills", "lists": ["initial-8"]},
+    {"url": "https://github.com/vivy-yi/awesome-skills", "lists": ["initial-8"]},
+    {"url": "https://github.com/Emmraan/agent-skills", "lists": ["additional-12"]},
+    {"url": "https://github.com/vercel-labs/skills", "lists": ["additional-12"]},
+    {"url": "https://github.com/agentskills/agentskills", "lists": ["additional-12"]},
+    {"url": "https://github.com/google-gemini/gemini-cli", "lists": ["additional-12"]},
+    {"url": "https://github.com/github/copilot-cli", "lists": ["additional-12"]},
+    {"url": "https://github.com/AkshitIreddy/agent-skills", "lists": ["additional-12"]},
+    {"url": "https://github.com/sentenz/skills", "lists": ["additional-12"]},
+    {"url": "https://github.com/Breklin/awesome-claude-skills", "lists": ["additional-12"]}
+  ]
+}

@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.env.*
+*.log
+
+# Local catalog state and third-party skill copies.
+index/skills.sqlite
+index/skills.sqlite-*
+index/metadata/
+index/staging/
+index/backup/
+index/tmp/
+index/resources/
+quarantine/
+
+# Imported skill payloads stay on disk but are not part of the tooling source.
+skills/*/*
+!skills/*/.gitkeep
+!skills/*/*/
+skills/*/*/**
+!skills/*/*/PLACEMENT.md
+
+sources/*.jsonl

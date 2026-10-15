@@ -1,0 +1,85 @@
+# Category ids are stable. Keywords are used only when a skill does not declare
+# a category and its path does not contain a category segment. A tie stays "other".
+
+categories:
+  - id: programming
+    description: General software implementation.
+    keywords: [programming, refactor, compiler, algorithm]
+  - id: frontend
+    description: Browser and client interface implementation.
+    keywords: [react, vue, svelte, css, frontend, nextjs]
+  - id: backend
+    description: Server-side application implementation.
+    keywords: [fastapi, django, backend, graphql, server]
+  - id: fullstack
+    description: Skills that span client and server implementation.
+    keywords: [fullstack, full-stack]
+  - id: architecture
+    description: System and software architecture.
+    keywords: [architecture, adr, system-design]
+  - id: ui-ux-design
+    description: Interface and interaction design.
+    keywords: [ux, ui-design, wireframe, figma, accessibility]
+  - id: image-generation
+    description: Creating or editing still images.
+    keywords: [image-generation, illustration, text-to-image]
+  - id: video-generation
+    description: Creating or editing video.
+    keywords: [video-generation, storyboard, text-to-video]
+  - id: image-video
+    description: Combined image and video creation workflows.
+    keywords: [image-video, multimedia-generation]
+  - id: audio
+    description: Sound, speech, and music.
+    keywords: [audio, podcast, speech, music]
+  - id: ai-agents
+    description: Designing or operating individual AI agents.
+    keywords: [ai-agent, agent-skill, skill-authoring]
+  - id: agent-orchestration
+    description: Coordinating multiple agents or tools.
+    keywords: [orchestration, multi-agent, workflow]
+  - id: automation
+    description: Repeatable local automation.
+    keywords: [automation, cron, browser-automation]
+  - id: cybersecurity
+    description: Defensive security review and hardening.
+    keywords: [cybersecurity, threat-model, vulnerability-review]
+  - id: testing
+    description: Tests and quality checks.
+    keywords: [pytest, playwright, testing, unit-test]
+  - id: research
+    description: Source research and synthesis.
+    keywords: [research, literature, citation]
+  - id: data-analysis
+    description: Analysis of tabular or statistical data.
+    keywords: [dataframe, pandas, data-analysis, statistics]
+  - id: databases
+    description: Database design and queries.
+    keywords: [sql, postgres, sqlite, database]
+  - id: devops
+    description: Build, release, and operational workflows.
+    keywords: [devops, ci-cd, docker, kubernetes]
+  - id: cloud
+    description: Cloud platform operations.
+    keywords: [aws, gcp, azure, cloud]
+  - id: documents
+    description: Documents, spreadsheets, and presentations.
+    keywords: [pdf, docx, spreadsheet, document]
+  - id: business
+    description: Business operations and writing.
+    keywords: [business, proposal, operations]
+  - id: finance
+    description: Financial analysis and reporting.
+    keywords: [finance, invoice, accounting]
+  - id: marketing
+    description: Marketing and communications.
+    keywords: [marketing, campaign, seo]
+  - id: education
+    description: Teaching and learning material.
+    keywords: [education, lesson, curriculum]
+  - id: industrial-iot
+    description: Industrial systems and connected devices.
+    keywords: [iot, scada, industrial]
+  - id: other
+    description: Skills that do not match a configured category.
+    keywords: []
